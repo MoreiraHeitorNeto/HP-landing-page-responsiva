@@ -1,0 +1,49 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.about, .characters {
+    margin-bottom: 2rem;
+}
+
+.characters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.characters li {
+    background-color: #e7e7e7;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .characters li {
+        font-size: 0.9rem;
+    }
+}
