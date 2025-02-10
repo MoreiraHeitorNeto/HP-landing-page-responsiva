@@ -1,0 +1,17 @@
+/* Footer.css */
+.footer {
+    position: relative;
+}
+
+.footer p {
+    animation: glowFooter 2s infinite alternate;
+}
+
+@keyframes glowFooter {
+    0% {
+        text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+    }
+}

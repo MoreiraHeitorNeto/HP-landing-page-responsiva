@@ -1,25 +1,66 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif; /* Fonte temática */
+    background-color: #0a0a0a; /* Fundo escuro */
+    color: #f0e6d2; /* Cor de texto dourado */
+}
+
 .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZcdpe5g8ETmcVYtq7H70FLEnHLnO0uKUYQ&s'); /* Imagem de fundo temática */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .header, .footer {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgba(10, 10, 10, 0.8); /* Fundo escuro com transparência */
+    color: #f0e6d2;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-style: italic;
 }
 
 .main-content {
     flex: 1;
     padding: 2rem;
-    background-color: #f9f9f9;
+    background-color: rgba(10, 10, 10, 0.8); /* Fundo escuro com transparência */
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .about, .characters {
     margin-bottom: 2rem;
+}
+
+.about h2, .characters h2 {
+    font-size: 2rem;
+    color: #d4af37; /* Cor dourada para títulos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 0.5rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .characters ul {
@@ -28,22 +69,44 @@
 }
 
 .characters li {
-    background-color: #e7e7e7;
+    background-color: rgba(255, 255, 255, 0.1);
     margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 4px;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.characters li:hover {
+    transform: translateX(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
     }
 
     .main-content {
         padding: 1rem;
+        margin: 1rem;
     }
 
-    .characters li {
-        font-size: 0.9rem;
+    .about h2, .characters h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p, .characters li {
+        font-size: 1rem;
     }
 }
