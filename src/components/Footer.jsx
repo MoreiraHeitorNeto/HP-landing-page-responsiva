@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>&copy; 2023 Harry Potter. Todos os direitos reservados.</p>
+            <p>&copy; O ruan é meu patinho na sinuca, no basquete, no fifa e tudo que é possivel.</p>
         </footer>
     );
 };
